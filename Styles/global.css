@@ -7,5 +7,12 @@
 
 
 :root{
-    
+ --font-family:"Open sans", sans-serif;
+ --text-sm:400 0.875rem var(--font-family);
+ --text-xs:400 0.75rem var(--font-family);
+ --text-md:400 1rem var(--font-family);
+}
+
+body{
+    overflow: hidden;
 }
