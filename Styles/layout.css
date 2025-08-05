@@ -1,5 +1,5 @@
 #app{
-  background-color: #131516;
+  background-color: #212427;
   display: grid;
   grid-template-columns:32% 68%;
 
@@ -10,7 +10,7 @@
 
 main{
   overflow: auto;
-  padding: 165px 130px 80px;
+  padding: 5rem 8.125rem 5rem;  
   
 }
 
@@ -19,31 +19,19 @@ aside{
   background-image: url(/Assets/Background.svg);
   background-repeat: no-repeat;
   border-radius: 12px;
- 
+}
 
+.location{
+  & .titulo{
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;    
+  }
 
-  & .aside-container{
-    img{
-    max-width: 46px;
-    max-height: 48px;
-    }
-
-    h1{
-      font-weight: 500;
-      font-family: "leckerli one";
-      font-size: 2.5rem;
-      color: #FF598B;
-      padding-top: 16px;
-      padding-bottom: 4px;
-      
-    }
-
-    p{
-      font-weight: 200;
-      font-family: "Baloo 2";
-      font-size: 1,125rem;
-      color: #F9F9F9;
-
-    }
+  & .startending{
+  display: flex;
+  gap:.5rem;
+  margin-top: 1rem;
   }
 }
+

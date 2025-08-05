@@ -16,3 +16,43 @@
 body{
     overflow: hidden;
 }
+
+fieldset{
+    all:unset;
+}
+
+input{
+    all: unset;
+    width: 100%;
+    padding: 1rem;
+    background-color: #1C1C1C;
+    border: 1px solid #454545;
+    border-radius: 8px;
+    color: #fff;
+    box-sizing: border-box;
+}
+
+.headerinit{
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 1rem;
+}
+
+.coluna {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.flex{
+    display: flex;
+}
+
+.flex-1{
+    flex:1
+}
+
+.flex-2{
+    flex:2
+}
