@@ -30,8 +30,21 @@ aside{
 
   & .startending{
   display: flex;
-  gap:.5rem;
+  gap: 0.5rem;
   margin-top: 1rem;
+
+  & .starting{
+    display:flex;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  & .ending{
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem
+    ;
+  }
   }
 }
 
