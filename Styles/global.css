@@ -1,4 +1,4 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -6,26 +6,26 @@
 
 
 
-:root{
- --font-family:"Open Sans", sans-serif;
- --text-sm:400 0.875rem var(--font-family);
- --text-xs:400 0.75rem var(--font-family);
- --text-md:400 1rem var(--font-family);
+:root {
+    --font-family: "Open Sans", sans-serif;
+    --text-sm: 400 0.875rem var(--font-family);
+    --text-xs: 400 0.75rem var(--font-family);
+    --text-md: 400 1rem var(--font-family);
 }
 
-input{
+input {
     all: unset;
 }
 
-body{
+body {
     overflow: hidden;
 }
 
-fieldset{
-    all:unset;
+fieldset {
+    all: unset;
 }
 
-.input-wrapper{
+.input-wrapper {
     width: 100%;
     padding: 1rem;
     background-color: #1C1F21;
@@ -33,15 +33,24 @@ fieldset{
     border-radius: 8px;
     color: #fff;
     box-sizing: border-box;
-    display:flex;
+    display: flex;
     flex-direction: column;
     gap: 0.5rem;
     font: var(--text-sm);
 }
 
 
-.text-sm{
+.text-sm {
     font: var(--text-sm);
-    color:#C8CDD0 ;
+    color: #C8CDD0;
 }
 
+textarea {
+    all: unset;
+    appearance: none;
+    width: 100%;
+    border-radius: .5rem;
+    background-color: #1C1F21;
+    border: 1px solid #363B40;
+
+}

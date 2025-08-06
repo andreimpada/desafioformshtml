@@ -6,6 +6,10 @@ h1{
 }
 
 .main-container{
+    display: flex;
+    flex-direction: column;
+    width: 560px;
+
     & .cabeca{
         display: flex;
         gap: 0.75rem;
@@ -17,7 +21,79 @@ h1{
             font-size: 1.125rem;
 
         }
+        
+
        
     }
 }
 
+.tipotxt{
+    font: var(--text-sm);
+    color:#C8CDD0 ;
+    margin:0.5rem;
+}
+
+ .tipo-container{
+    display: flex;
+    border: 1px solid #363B40;
+    border-radius: .5rem;
+    overflow: hidden;
+    background-color: #1C1F21;
+    width: fit-content;
+    margin-bottom: 0.5rem;
+
+    & .tipo-input{
+        display: none;
+    }
+
+    & .tipo-option{
+        margin: 3px;
+        flex: 1;
+        padding: 0.75rem 1rem;
+        text-align: center;
+        cursor: pointer;
+        color:#C8cdd0;
+        font-size: 0.875rem;
+        background-color: #1C1F21;
+        transition: all 0.5s ease;
+        display: flex;
+        align-items: center;
+        justify-content: center; 
+        gap:0.5rem;
+        box-sizing: border-box;
+        gap: 0.3rem;
+        font-weight: 300;
+        
+        & svg{
+            color: #869198;
+            transition: color 0.3 ease;
+        }
+        
+    }
+
+    & .tipo-input:checked + .tipo-option{
+        margin: 3px;
+        border-radius: 6px;
+        background-color: #2a2f34;
+        color:#F8F9F9;
+        font-weight: 500;
+
+        & svg{
+            color: #5A9CFF;
+        }
+    }
+
+
+ }
+
+.description-container{
+    & textarea{
+        margin-top: .5rem;
+        padding: 1rem;
+    }
+}
+
+
+.titulo{
+    width: 100%;
+}

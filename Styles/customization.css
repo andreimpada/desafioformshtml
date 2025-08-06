@@ -1,0 +1,88 @@
+.customization {
+  display: block;
+  width: 100%;
+  margin-top: 2rem; /* opcional: para dar espaçamento */
+}
+
+.color-picker{
+    display: flex;
+    gap: 0.75rem;
+    flex-wrap: wrap;
+    padding-top: 1rem;
+    margin-bottom: 28px;
+}
+
+.color-picker input[type="radio"] {
+  display: none;
+}
+
+.color-option{
+    width: 2rem;
+    height: 2rem;
+    border-radius: 50%;
+    cursor: pointer;
+    border: 4px solid #383d42;
+    display: inline-block;
+    transition: border 0.2s ease, boxshadow 0.2s ease;
+    position: relative;
+
+}
+
+.color-picker input[type="radio"]:not(:checked):hover + .color-option{
+box-shadow: 0 0 0 2px #59b2ff;
+}
+
+.color-picker input[type="radio"]:checked + .color-option{
+    box-shadow: 0 0 0 3px #59B2FF;
+}
+
+
+.style-picker{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(120px, 0));
+    gap: 1rem;
+    margin-top: 1rem;
+    width: 100%;
+}
+
+
+.style-option{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 2px solid transparent;
+    border-radius: 8px;
+    padding: 10px;
+    cursor: pointer;
+    transition: border-color 0.2s ease, box-shadow 0.3s ease;
+    background-color:#1f1f1f;
+    text-align: center;
+}
+
+.style-option input[type="radio"] {
+    display: none;
+}
+
+.style-option img{
+    width: 100px;
+    height: 80px;
+    object-fit: cover;
+    border-radius: 6px;
+}
+
+.style-option span{
+    margin-top: 8px;
+    color: #fff;
+    font-size: 0.875rem;
+}
+
+.style-option input[type="radio"]:checked + img {
+  outline: none;
+}
+
+.style-option input[type="radio"]:checked ~ span,
+.style-option input[type="radio"]:checked ~ img {
+  border: 2px solid #0099ff;
+  border-radius: 6px;
+}
+
