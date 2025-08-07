@@ -23,6 +23,8 @@ aside {
 }
 
 .about {
+  width: 100%;
+
   & .titulo {
     display: flex;
     flex-direction: column;
@@ -31,16 +33,18 @@ aside {
 
   & .startending {
     display: flex;
-    gap: 0.5rem;
+    gap: 1rem;
     margin: 0.75rem 0;
 
     & .starting {
+      width:50%;
       display: flex;
       flex-direction: column;
       gap: 0.5rem;
     }
 
     & .ending {
+      width: 50%;
       display: flex;
       flex-direction: column;
       gap: 0.5rem;
