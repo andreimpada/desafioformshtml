@@ -8,7 +8,7 @@ h1{
 .main-container{
     display: flex;
     flex-direction: column;
-    width: 560px;
+    width: 35rem;
 
     & .cabeca{
         display: flex;
@@ -97,8 +97,6 @@ h1{
     
     & textarea{
         margin-top: .5rem;
-        /* padding-left: .5rem;
-        padding-top: .5rem;  */
     }
 }
 

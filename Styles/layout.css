@@ -5,12 +5,10 @@
 
   height: 100vh;
   overflow: hidden;
-  /* gap: 20px; */
 }
 
 main {
   overflow: auto;
-  /* padding: 5rem 8.125rem 5rem; */
   padding: 4rem;
 
 }
