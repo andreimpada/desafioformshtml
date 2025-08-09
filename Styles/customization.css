@@ -90,7 +90,115 @@ label:has(input[type="radio"]:checked){
   border-radius: 6px;
 }
 
-.lightcustom{
+.lightcustom,
+.filedrop{
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
+  gap: 0.5rem;
+  align-items: flex-start;
+}
+
+.lightcustom{
+  width: 176px;
+  height: 79px;
+}
+
+.filedrop{
+  width: 379px;
+  height: 79px;
+}
+
+.stylecustom{
+  display:flex;
+  align-items: flex-start;
+  gap: 20px;
+ 
+}
+
+.switch-row{
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  cursor: pointer;
+}
+
+.switch-row .toggle{
+  position:absolute;
+  opacity: 0;
+}
+
+.track{
+  fill: #1C1F21;
+  stroke: #363B40;
+}
+
+.thumb{
+  fill: #363b40;
+  transition: transform 0.3s ease, fill 0.3s ease;
+  transform: translateX(0);
+}
+
+.toggle:checked + svg .track{
+  fill: #2Ba8FF;
+  stroke: #2Ba8FF;
+}
+
+.toggle:checked +svg .thumb{
+  fill: #fff;
+  transform: translateX(32px);
+}
+
+.toggle:checked ~ .text-sm::before{
+  content:"Claro"
+}
+
+.toggle:not(:checked) ~ .text-sm::before{
+  content: "Escuro";
+}
+
+
+
+.file-controls {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+
+
+.filedroplabel{
+display: flex;
+align-items: center;
+gap: 0.5rem;
+width: 119px;
+height: 40px;
+background: #2D3136;
+justify-content: center;
+border-radius: 0.5rem;
+cursor: pointer;
+}
+
+.filedropselect{
+  color: #F8F9F9;
+  font: var(--text-sm);
+}
+
+.filename{
+  font: var(--text-sm);
+  color:#869198;
+}
+
+
+
+
+
+.filedrop input[type="file"] {
+    display: none;
+
+}
+
+
+.filedrop label:hover{
+  background-color: #3487CF;
+  
 }

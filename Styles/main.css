@@ -28,6 +28,7 @@ h1{
 }
 
 .tipotxt{
+    margin: 0;
     font: var(--text-sm);
     color:#C8CDD0 ;
     margin-bottom: 0.5rem;
