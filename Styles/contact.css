@@ -1,0 +1,116 @@
+.contact{
+    display: flex;
+    flex-direction: column;
+    width: 35rem;
+
+    & .cabeca{
+        display: flex;
+        gap: 0.75rem;
+        margin-bottom: 1.5rem;
+
+        & h2{
+            font-family: "Baloo 2";
+            color: #F9F9F9;
+            font-size: 1.125rem;
+
+        }
+        
+
+       
+    }
+}
+
+.contactlayout {
+  width: 100%;
+
+  & .titulo {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  & .startending {
+    display: flex;
+    gap: 1rem;
+    margin: 0.75rem 0;
+
+    & .starting {
+      width:50%;
+      display: flex;
+      flex-direction: column;
+      gap: 0.5rem;
+    }
+
+    & .ending {
+      width: 50%;
+      display: flex;
+      flex-direction: column;
+      gap: 0.5rem;
+    }
+
+  }
+}
+
+.linha-separadora {
+    height: 1px;
+    background-color: rgba(255, 255, 255, 0.1); 
+    border: none;
+    margin: 15px 0;
+}
+
+.termslayout{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 48px;
+
+}
+
+.termslayout input[type="checkbox"]{
+    appearance: none;
+    width: 18px;
+    height: 18px;
+    border: 2px solid #555;
+    border-radius: 4px;
+    background-color: transparent;
+    margin-right: 8px;
+    cursor: pointer;
+    position: relative;
+}
+
+.termslayout input[type="checkbox"]:checked{
+    border-color: #0af;
+}
+
+.termslayout input[type="checkbox"]:checked::after{
+    content: "";
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    width: 14px;
+    height: 14px;
+    background-image: url("data:image/svg+xml;utf8,<svg fill='%230af' viewBox='0 0 16 16' xmlns='http://www.w3.org/2000/svg'><path d='M6.173 12.067a.5.5 0 0 1-.354-.146l-3.5-3.5a.5.5 0 0 1 .707-.707l3.146 3.147 6.646-6.647a.5.5 0 0 1 .707.707l-7 7a.5.5 0 0 1-.354.146z'/></svg>");
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.termslayout a {
+    color: #0af;
+    text-decoration: none;
+}
+
+.termslayout a:hover {
+    text-decoration: underline;
+}
+
+.termslayout label {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.gerarconvite{
+    display: flex;
+    flex-direction: row-reverse;
+    cursor: pointer;
+}

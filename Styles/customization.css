@@ -1,7 +1,7 @@
 .customization {
   display: block;
   width: 100%;
-  margin-top: 2rem; /* opcional: para dar espaçamento */
+  margin-top:48px;
 }
 
 .color-picker{
@@ -112,6 +112,8 @@ label:has(input[type="radio"]:checked){
   display:flex;
   align-items: flex-start;
   gap: 20px;
+  margin-bottom: 48px;
+  margin-top: 14px;
  
 }
 
