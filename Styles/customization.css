@@ -188,6 +188,10 @@ cursor: pointer;
 .filename{
   font: var(--text-sm);
   color:#869198;
+  max-width: 240px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 

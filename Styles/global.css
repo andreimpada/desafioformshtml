@@ -39,6 +39,36 @@ fieldset {
     font: var(--text-sm);
 }
 
+.input-wrapper:focus-within {
+    border: 1px solid #59B2FF;
+}
+
+input:invalid {
+    border: none;
+}
+
+input:invalid:focus,
+input:invalid:focus-within {
+    outline: none;
+}
+
+input:invalid:focus ~ .error-message,
+input:invalid:focus-within ~ .error-message {
+    display: block;
+}
+
+input:invalid:focus-within,
+input:invalid:focus {
+    border-color: #FF5959;
+}
+
+.error-message {
+    display: none;
+    font-size: 0.75rem;
+    color: #FF5959;
+
+}
+
 
 .text-sm {
     font: var(--text-sm);
