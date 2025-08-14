@@ -78,3 +78,10 @@ aside {
   font: var(--text-sm);
 }
 
+.local-container:focus-within {
+    border: 1px solid #59B2FF;
+}
+
+textarea:focus-within{
+  border: 1px solid #59B2FF;
+}
